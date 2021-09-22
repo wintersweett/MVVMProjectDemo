@@ -1,0 +1,8 @@
+
+rootProject.name = 'MVVMProjectDemo'
+include ':app'
+include ':base'
+include ':common'
+include ':net'
+include ':login'
+include ':othermodule'

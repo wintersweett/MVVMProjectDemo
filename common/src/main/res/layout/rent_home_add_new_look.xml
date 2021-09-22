@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:orientation="vertical"
+    style="@style/margin_common"
+    android:background="@drawable/shape_white_back"
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <RelativeLayout
+        android:id="@+id/rl_to_detail"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:id="@+id/iv"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="16dp"
+            android:src="@mipmap/car_verify_default"
+            android:layout_width="92dp"
+            android:layout_height="66dp"/>
+        <TextView
+            android:id="@+id/tv_title"
+            android:text="新宝骏 E300"
+            android:textSize="16sp"
+            android:layout_toRightOf="@id/iv"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="16dp"
+            android:textColor="@color/color_black"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+        <TextView
+            android:id="@+id/tv_comfort"
+            android:text="舒适型"
+            android:layout_toRightOf="@id/iv"
+            android:layout_marginLeft="16dp"
+            android:layout_below="@id/tv_title"
+            android:layout_marginTop="4dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+        <TextView
+            android:id="@+id/tv_plateNum"
+            android:text="京牌"
+            android:layout_toRightOf="@id/tv_comfort"
+            android:layout_below="@id/tv_title"
+            android:layout_marginTop="4dp"
+            android:layout_marginLeft="5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+        <TextView
+            android:text="自动·5座·1.6T"
+            android:layout_toRightOf="@id/iv"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="4dp"
+            android:layout_below="@id/tv_comfort"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+        <TextView
+            android:text="车辆匹配中"
+            android:textSize="16sp"
+            android:textColor="@color/color_black"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+    </RelativeLayout>
+    <View
+        android:layout_width="match_parent"
+        style="@style/margin_common"
+        android:background="@color/view_back_color"
+        android:layout_height="0.5dp"/>
+    <RelativeLayout
+        android:id="@+id/rl_get_back_car_info"
+        android:layout_marginTop="8dp"
+        style="@style/margin_common"
+        android:layout_width="match_parent"
+        android:layout_height="105dp">
+
+        <ImageView
+            android:id="@+id/iv_rent_time"
+            android:layout_marginTop="16dp"
+            android:layout_marginLeft="16dp"
+            android:src="@mipmap/rent_time"
+            android:layout_width="28dp"
+            android:layout_height="16dp" />
+
+        <TextView
+            android:id="@+id/tv_start_time"
+            android:text="10.10 10:00"
+            android:layout_marginTop="14dp"
+            android:layout_marginLeft="2dp"
+            android:textSize="12sp"
+            android:textColor="@color/color_black"
+            android:layout_toRightOf="@id/iv_rent_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/tv_dur_time"
+            android:layout_toRightOf="@id/tv_start_time"
+            android:text="2天"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="11dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:text="10.12 10:00"
+            android:layout_marginTop="14dp"
+            android:layout_marginLeft="2dp"
+            android:textSize="12sp"
+            android:textColor="@color/color_black"
+            android:layout_toRightOf="@id/tv_dur_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/tv_get_car_poi"
+            android:text="取车网点"
+            android:textSize="12sp"
+            android:layout_below="@id/iv_rent_time"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="15dp"
+            android:textColor="@color/color_black"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/tv_car_position"
+            android:layout_below="@id/tv_dur_time"
+            android:layout_toRightOf="@id/tv_get_car_poi"
+            android:text="汉威国际一区西侧停车场"
+            android:textSize="12sp"
+            android:layout_marginTop="18dp"
+            android:layout_marginLeft="29dp"
+            android:textColor="@color/color_black"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/tv_edit"
+            android:text="修改 >"
+            android:textSize="12sp"
+            android:visibility="gone"
+            android:textColor="@color/edit_color"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="16dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/tv_back_car_poi"
+            android:text="还车网点"
+            android:textSize="12sp"
+            android:layout_below="@id/tv_get_car_poi"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="15dp"
+            android:textColor="@color/color_black"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:layout_below="@id/tv_car_position"
+            android:layout_toRightOf="@id/tv_back_car_poi"
+            android:text="汉威国际一区西侧停车场"
+            android:textSize="12sp"
+            android:layout_marginTop="16dp"
+            android:layout_marginLeft="29dp"
+            android:textColor="@color/color_black"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+    </RelativeLayout>
+</LinearLayout>

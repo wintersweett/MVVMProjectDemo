@@ -1,0 +1,73 @@
+apply plugin: 'com.android.library'
+android {
+    compileSdkVersion rootProject.compileSdkVersion
+    buildToolsVersion rootProject.buildToolsVersion
+
+    defaultConfig {
+        minSdkVersion rootProject.minSdkVersion
+        targetSdkVersion rootProject.targetSdkVersion
+        versionCode rootProject.ext.versionCode
+        versionName rootProject.ext.versionName
+
+        javaCompileOptions {
+            annotationProcessorOptions {
+                println project.getName()
+                arguments = [AROUTER_MODULE_NAME: project.getName()]
+            }
+        }
+
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+        consumerProguardFiles 'consumer-rules.pro'
+    }
+
+    buildTypes {
+        release {//ok
+            consumerProguardFiles 'proguard-rules.pro'
+        }
+        debug {//
+            consumerProguardFiles 'proguard-rules.pro'
+        }
+    }
+    compileOptions {  //应用里用lamda表达式
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+    dataBinding {
+        enabled true
+    }
+
+}
+
+dependencies {
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+    api 'com.android.support:appcompat-v7:28.0.0'
+    //重点：接入导航sdk 是跟androidx的constraintlayout有冲突的
+    api 'com.android.support.constraint:constraint-layout:1.1.3'
+    api 'com.android.support:recyclerview-v7:28.0.0'
+    api 'com.android.support:cardview-v7:28.0.0'
+//用api 是因为 其他依赖了base module的 也要用appcompat （也就是传递给下一个module里用）
+    //  api "androidx.appcompat:appcompat:$rootProject.androidXVersion"
+    api 'com.google.code.gson:gson:2.8.2'
+    implementation 'androidx.appcompat:appcompat:1.2.0'
+    implementation 'androidx.constraintlayout:constraintlayout:2.0.4'
+    testImplementation 'junit:junit:4.12'
+    androidTestImplementation 'androidx.test.ext:junit:1.1.2'
+    androidTestImplementation 'androidx.test.espresso:espresso-core:3.3.0'
+    api 'com.kingja.loadsir:loadsir:1.3.6'  //专门做页面替换的 比如错误页面
+    //动画资源的库
+    implementation 'com.airbnb.android:lottie:2.8.0'
+    //   api "androidx.recyclerview:recyclerview:$rootProject.androidXVersion"
+    api 'io.reactivex.rxjava2:rxjava:2.1.16'
+    api 'com.alibaba:arouter-api:1.4.1'
+    annotationProcessor 'com.alibaba:arouter-compiler:1.2.2'
+    implementation 'com.google.zxing:core:3.0.1'
+//json动画的一个库
+    api 'com.airbnb.android:lottie:3.4.1'
+    api 'com.orhanobut:logger:1.15'
+    api 'com.jaeger.statusbarutil:library:1.5.1'
+
+// 基础依赖包，必须要依赖 沉浸式
+    api 'com.gyf.immersionbar:immersionbar:3.0.0'
+    // fragment快速实现（可选）
+    api 'com.gyf.immersionbar:immersionbar-components:3.0.0'
+}

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="basecolorPrimary">#3F51B5</color>
+    <color name="basecolorPrimaryDark">#303F9F</color>
+    <color name="basecolorAccent">#FF4081</color>
+    <color name="gray_5D6168">#5D6168</color>
+    <color name="black">#ff000000</color>
+    <color name="header_cloud_bg">#FFFFFF</color>
+    <color name="basetransparent">#00000000</color>
+    <color name="color_black">#FF222222</color>
+    <color name="nodata_color">#80222222</color>
+    <color name="colorAccent">#03DAC5</color>
+</resources>

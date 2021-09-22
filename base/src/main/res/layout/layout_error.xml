@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:id="@+id/ll_error"
+              android:orientation="vertical">
+    <TextView
+        android:id="@+id/tv_retry"
+        android:textSize="12sp"
+        android:textColor="#80222222"
+        android:layout_centerInParent="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="系统出现异常，请点击重试"/>
+    <ImageView
+        android:layout_marginBottom="4dp"
+        android:layout_above="@id/tv_retry"
+        android:layout_centerHorizontal="true"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:background="@drawable/no_data"/>
+</RelativeLayout>

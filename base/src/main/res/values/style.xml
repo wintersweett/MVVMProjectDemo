@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+        <style name="cardview" >
+            <item name="android:layout_marginLeft">16dp</item>
+            <item name="android:layout_marginRight">16dp</item>
+            <item name="cardCornerRadius">15dp</item>
+            <item name="android:layout_width">match_parent</item>
+        </style>
+        <style name="wrap">
+            <item name="android:layout_width">wrap_content</item>
+            <item name="android:layout_height">wrap_content</item>
+        </style>
+        <style name="padding_16">
+            <item name="android:paddingLeft">16dp</item>
+            <item name="android:paddingRight">16dp</item>
+        </style>
+        <style name="margin_top" parent="@style/wrap">
+            <item name="android:layout_marginTop">16dp</item>
+            <item name="android:layout_marginLeft">16dp</item>
+        </style>
+        <style name="roadrecord">
+            <item name="android:textSize">40sp</item>
+            <item name="android:textColor">#FF222222</item>
+        </style>
+        <style name="ll_roadrecord">
+            <item name="android:textSize">40sp</item>
+            <item name="android:textColor">@color/color_black</item>
+            <item name="android:layout_width">wrap_content</item>
+            <item name="android:layout_height">wrap_content</item>
+        </style>
+        <style name="ll_roadrecord_unit">
+            <item name="android:layout_width">wrap_content</item>
+            <item name="android:layout_height">wrap_content</item>
+            <item name="android:textSize">12sp</item>
+            <item name="android:layout_marginTop">2dp</item>
+            <item name="android:textColor">@color/giveback_gray</item>
+        </style>
+        <style name="info_image">
+            <item name="android:layout_width">28dp</item>
+            <item name="android:layout_height">28dp</item>
+        </style>
+        <style name="margin_common">
+            <item name="android:layout_marginLeft">16dp</item>
+            <item name="android:layout_marginRight">16dp</item>
+        </style>
+        <style name="view">
+            <item name="android:layout_width">match_parent</item>
+            <item name="android:layout_height">0.5dp</item>
+        </style>
+        <style name="margin_right_common">
+            <item name="android:layout_alignParentRight">true</item>
+            <item name="android:layout_marginRight">16dp</item>
+        </style>
+        <!-- 对话框样式 -->
+        <style name="Theme.Light.Dialog" parent="android:style/Theme.Dialog">
+            <item name="android:windowBackground">@android:color/transparent</item>
+            <item name="android:windowNoTitle">true</item>
+            <item name="android:windowIsFloating">true</item>
+            <item name="android:windowContentOverlay">@null</item>
+            <item name="android:scrollHorizontally">true</item>
+            <item name="android:textAppearance">@android:style/TextAppearance.DialogWindowTitle</item>
+        </style>
+        <style name="Dialog" parent="android:style/Theme.Dialog">
+            <item name="android:background">#00000000</item>
+            <item name="android:windowBackground">@android:color/transparent</item>
+            <item name="android:windowNoTitle">true</item>
+            <item name="android:windowIsFloating">true</item>
+        </style>
+        <style name="zxchat_AnimBottom" parent="@android:style/Animation">
+            <!--<item name="android:windowEnterAnimation">@anim/zxchat_push_bottom_in</item>
+            <item name="android:windowExitAnimation">@anim/zxchat_push_bottom_out</item>-->
+        </style>
+    <style name="dia_style">
+        <item name="android:windowBackground">@null</item>
+    </style>
+
+
+
+</resources>

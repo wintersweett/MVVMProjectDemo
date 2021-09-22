@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="../../../../layout/custom_preview.xml" value="0.24114583333333334" />
+        <entry key="app/src/main/res/layout/activity_main.xml" value="0.192481884057971" />
+        <entry key="base/src/main/res/layout/header_cloud_style.xml" value="0.20989583333333334" />
+        <entry key="common/src/main/res/layout/item_car_area.xml" value="0.20052083333333334" />
+        <entry key="login/src/main/res/layout/activity_login.xml" value="0.165" />
+        <entry key="net/src/main/res/layout/activity_environment.xml" value="0.19895833333333332" />
+        <entry key="othermodule/src/main/res/layout/activity_other.xml" value="0.12135416666666667" />
+      </map>
+    </option>
+  </component>
+  <component name="ExternalStorageConfigurationManager" enabled="true" />
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_1_8" project-jdk-name="11" project-jdk-type="JavaSDK" />
+</project>

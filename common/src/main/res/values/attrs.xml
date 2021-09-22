@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="DropDownMenu">
+
+        <attr name="ddtextSelectedColor" format="color"/>
+        <attr name="ddtextUnselectedColor" format="color"/>
+        <attr name="ddmenuBackgroundColor" format="color"/>
+        <attr name="ddmaskColor" format="color"/>
+        <attr name="ddneedSetSlectedColor" format="boolean"/>
+        <attr name="ddmenuTextSize" format="dimension"/>
+        <attr name="ddmenuMaxHeight" format="dimension"/>
+        <attr name="ddmenuSelectedIcon" format="reference"/>
+        <attr name="ddmenuUnselectedIcon" format="reference"/>
+        <attr name="banner_radius" format="dimension"/>
+        <attr name="banner_indicator_normal_color" format="reference|color"/>
+        <attr name="banner_indicator_selected_color" format="reference|color"/>
+    </declare-styleable>
+
+    <!--monthView-->
+    <declare-styleable name="CalendarView">
+        <attr name="cl_textColor" format="color" />
+        <attr name="cl_monthPaddingLeft" format="dimension" />
+        <attr name="cl_monthPaddingTop" format="dimension" />
+        <attr name="cl_monthPaddingRight" format="dimension" />
+        <attr name="cl_monthPaddingBottom" format="dimension" />
+        <attr name="cl_cornerRadius" format="dimension" />
+        <attr name="cl_selectTextColor" format="color" />
+        <attr name="cl_weekendTextColor" format="color" />
+        <attr name="cl_disTextColor" format="color" />
+        <attr name="cl_sameTextColor" format="color" />
+        <attr name="cl_topTextColor" format="color" />
+        <attr name="cl_selectMaxRange" format="integer" />
+        <attr name="cl_textSize" format="dimension" />
+        <attr name="cl_textStyle" format="flags">
+            <flag name="normal" value="0" />
+            <flag name="bold" value="1" />>
+        </attr>
+        <attr name="cl_topTextSize" format="dimension" />
+        <attr name="cl_bottomTextSize" format="dimension" />
+        <attr name="cl_firstTopMargin" format="dimension" />
+        <attr name="cl_secondTopMargin" format="dimension" />
+        <attr name="cl_thirdTopMargin" format="dimension" />
+        <attr name="cl_dividerHeight" format="dimension" />
+        <attr name="cl_dividerColor" format="color" />
+        <attr name="cl_firstSelectDayText" format="string" />
+        <attr name="cl_lastSelectDayText" format="string" />
+        <attr name="cl_rowHeight" format="dimension" />
+        <attr name="cl_selectBgDrawable" format="reference" />
+        <attr name="cl_selectRangeBgDrawable" format="reference" />
+    </declare-styleable>
+
+
+    <declare-styleable name="MonthLableView">
+        <attr name="cl_lableWeekendTextColor" format="color" />
+        <attr name="cl_lableTextColor" format="color" />
+        <attr name="cl_lableTextSize" format="dimension" />
+        <attr name="cl_lableArr" format="reference" />
+    </declare-styleable>
+
+
+
+    //citypicker
+    <attr name="cpCancelTextSize" format="dimension|reference" />
+    <attr name="cpCancelTextColor" format="color|reference" />
+
+    <attr name="cpClearTextIcon" format="reference" />
+    <attr name="cpSearchTextSize" format="dimension|reference" />
+    <attr name="cpSearchTextColor" format="color|reference" />
+    <attr name="cpSearchHintText" format="string|reference" />
+    <attr name="cpSearchHintTextColor" format="color|reference" />
+    <attr name="cpSearchCursorDrawable" format="reference" />
+
+    <attr name="cpListItemTextSize" format="dimension|reference" />
+    <attr name="cpListItemTextColor" format="color|reference" />
+    <attr name="cpListItemHeight" format="dimension|reference"/>
+
+    <attr name="cpEmptyIcon" format="reference"/>
+    <attr name="cpEmptyIconWidth" format="dimension|reference"/>
+    <attr name="cpEmptyIconHeight" format="dimension|reference"/>
+    <attr name="cpEmptyText" format="string|reference"/>
+    <attr name="cpEmptyTextSize" format="dimension|reference"/>
+    <attr name="cpEmptyTextColor" format="color|reference"/>
+
+    <attr name="cpGridItemBackground" format="color|reference"/>
+    <attr name="cpGridItemSpace" format="reference"/>
+
+    <attr name="cpSectionHeight" format="reference"/>
+    <attr name="cpSectionTextSize" format="reference" />
+    <attr name="cpSectionTextColor" format="reference" />
+    <attr name="cpSectionBackground" format="reference" />
+
+    <attr name="cpIndexBarTextSize" format="reference" />
+    <attr name="cpIndexBarNormalTextColor" format="reference" />
+    <attr name="cpIndexBarSelectedTextColor" format="reference" />
+
+    <attr name="cpOverlayWidth" format="dimension|reference"/>
+    <attr name="cpOverlayHeight" format="dimension|reference"/>
+    <attr name="cpOverlayTextSize" format="dimension|reference"/>
+    <attr name="cpOverlayTextColor" format="color|reference"/>
+    <attr name="cpOverlayBackground" format="color|reference"/>
+</resources>

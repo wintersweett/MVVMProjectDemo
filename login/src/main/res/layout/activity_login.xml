@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+        <variable
+            name="loginActivity"
+            type="com.mvvm.login.login.LoginActivity" />
+
+    </data>
+
+    <LinearLayout
+        android:id="@+id/parent"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="32dp"
+            android:layout_marginTop="51dp"
+            android:text="账号密码登录"
+            android:textSize="32sp"
+            android:textStyle="bold" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="32dp"
+            android:layout_marginTop="48dp"
+            android:layout_marginEnd="32dp">
+
+            <EditText
+                android:id="@+id/username"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@android:color/transparent"
+                android:hint="手机号/邮箱/用户名"
+                android:maxLines="1"
+                android:paddingTop="12dp"
+                android:paddingBottom="12dp"
+                android:textSize="16sp" />
+
+            <ImageView
+                android:id="@+id/iv_username_clean"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom"
+                android:paddingStart="16dp"
+                android:paddingTop="10dp"
+                android:paddingBottom="11dp"
+                android:visibility="invisible"
+                tools:ignore="RtlSymmetry"
+                tools:visibility="visible" />
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="62dp"
+            android:layout_marginStart="32dp"
+            android:layout_marginEnd="32dp"
+            android:orientation="horizontal">
+
+            <EditText
+                android:id="@+id/password"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom"
+                android:layout_weight="1"
+                android:background="@android:color/transparent"
+                android:hint="密码"
+                android:inputType="textPassword"
+                android:maxLength="16"
+                android:maxLines="1"
+                android:paddingTop="10dp"
+                android:paddingBottom="12dp"
+                android:textSize="16sp" />
+
+            <ImageView
+                android:id="@+id/iv_password_clean"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom"
+                android:paddingStart="16dp"
+                android:paddingTop="10dp"
+                android:paddingEnd="8dp"
+                android:paddingBottom="11dp"
+                android:visibility="invisible"
+                tools:ignore="RtlSymmetry"
+                tools:visibility="visible" />
+
+            <ImageView
+                android:id="@+id/iv_password_see"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom"
+                android:paddingStart="10dp"
+                android:paddingTop="10dp"
+                android:paddingBottom="11dp"
+                android:visibility="invisible"
+                tools:visibility="visible" />
+        </LinearLayout>
+        <Button
+            android:id="@+id/bt_submit"
+            android:text="登陆"
+            android:onClick="@{loginActivity::doClick}"
+            android:layout_marginTop="50dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_width="match_parent"
+            android:layout_marginLeft="40dp"
+            android:layout_marginRight="40dp"
+            android:layout_height="50dp"/>
+
+
+
+
+    </LinearLayout>
+</layout>

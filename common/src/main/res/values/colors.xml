@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools">
+<color name="infoname">#00FFFFFF</color>
+    <color name="gray">#FFDDDDDD</color>
+    <color name="road_record_text">#80222222</color>
+    <color name="road_record_unit">#80222222</color>
+    <color name="colorPrimary">#6200EE</color>
+    <color name="colorPrimaryDark">#3700B3</color>
+    <color name="colorAccent">#03DAC5</color>
+    <color name="color_black">#FF222222</color>
+    <color name="color_gray">#ffeeeeee</color>
+
+    <color name="vr_shape_color">#FF23CEAA</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="light_white">#66FFFFFF</color>
+    <color name="gray_unselect">#FFEFEFEF</color>
+    <color name="h_right_shape">#99FFFFFF</color>
+    <color name="h_right_shape_stroke">#33979797</color>
+    <color name="get_car_poi">#80222222</color>
+    <color name="view_back_color">#1A000000</color>
+    <color name="back_shape_color">#FFEEEEEE</color>
+    <color name="giveback_gray">#66222222</color>
+    <color name="bill_back">#00ffffff</color>
+    <color name="num_back_green">#FFA6E0CD</color>
+    <color name="back_light_orange">#FFE6D9CC</color>
+    <color name="blue_color_veryfycode">#664E6BFF</color>
+    <color name="gray_back">#FFF0F2F5</color>
+    <color name="login_button">#66FFFFFF</color>
+    <color name="blogin_6fa2ff">#6FA2FF</color>
+    <color name="tvshowmsg">#8D9496</color>
+
+    <color name="drop_down_selected">#FFFF554B</color>
+    <color name="drop_down_unselected">#111111</color>
+    <color name="hint_gray">#ffe6e6e6</color>
+    <color name="mask_color">#88888888</color>
+    <color name="check_bg">#f2f2f2</color>
+    <color name="un_press_color">#9C27B0</color>
+    <color name="tab_select_color">#0000FF</color>
+    <color name="slide_bt">#FFF0F2F5</color>
+
+    <color name="sort_text_selected">#FFFF554B</color>
+    <color name="back_color">#FFF0F2F5</color>
+    <color name="edit_color">#FF5854FB</color>
+    <color name="blue_color">#FF00BBFF</color>
+    <color name="time_blue">#FF5854FB</color>
+    <color name="invoice_view">#FFF3F3F3</color>
+    <color name="red_dot">#FFFF554B</color>
+
+    <color name="tab_color">#FFFD794D</color>
+    <color name="verify_color">#FF212121</color>
+    <color name="item4_back_color">#00FFFFFF</color>
+    //异地提示标题
+    <color name="dia_title_color">#FF030E36</color>
+    //异地提示msg
+    <color name="dia_content_color">#FF000000</color>
+    <color name="car_price_color">#FFFD453A</color>
+    <color name="authen_color">#BABBC7</color>
+    <color name="authened_color">#4E6BFF</color>
+    //不透明30%
+    <color name="trans_color">#4D222222</color>
+    <color name="line_color">#80000000</color>
+    <color name="color_light_purple">#DEE2FC</color>
+    <color name="main_page_color">#7097DE</color>
+    <color name="protocol_color">#FF4E6BFF</color>
+    <color name="orange_selected_color">#FFA940</color>
+    <color name="orange_unselect_color">#66FFA940</color>
+<color name="absolute_black">#222222</color>
+
+//citypicker的
+    <color name="cp_colorPrimary">#3F51B5</color>
+    <color name="cp_colorPrimaryDark">#303F9F</color>
+    <color name="cp_colorAccent">#3F51B5</color>
+
+    <color name="cp_color_gray_light">#cdcdcd</color>
+    <color name="cp_color_gray">#999999</color>
+    <color name="cp_color_gray_deep">#666666</color>
+    <color name="cp_color_gray_dark">#333333</color>
+    <color name="cp_color_section_bg">#EDEDED</color>
+    <color name="cp_color_grid_item_bg">#f5f5f5</color>
+    <color name="progressbar_color">#23CEAA</color>
+
+</resources>

@@ -1,0 +1,31 @@
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+
+    </data>
+
+    <RelativeLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <!-- ViewPager-->
+
+        <androidx.viewpager.widget.ViewPager
+            android:id="@+id/common_view_pager"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+        <!-- 指示器 indicatorView-->
+        <com.zhouwei.indicatorview.CircleIndicatorView
+            android:id="@+id/common_view_pager_indicator_view"
+            android:layout_width="8dp"
+            android:layout_height="8dp"
+            android:layout_centerInParent="true"
+            app:indicatorSelectColor="@android:color/white"
+            app:indicatorColor="@android:color/darker_gray"
+            app:fill_mode="none"
+            app:indicatorSpace="5dp"
+            android:layout_centerHorizontal="true" />
+    </RelativeLayout>
+</layout>

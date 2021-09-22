@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="cardview" >
+        <item name="android:layout_marginLeft">16dp</item>
+        <item name="android:layout_marginRight">16dp</item>
+        <item name="cardCornerRadius">15dp</item>
+        <item name="android:layout_width">match_parent</item>
+    </style>
+    <style name="wrap">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+    <style name="padding_16">
+        <item name="android:paddingLeft">16dp</item>
+        <item name="android:paddingRight">16dp</item>
+    </style>
+    <style name="margin_top" parent="@style/wrap">
+        <item name="android:layout_marginTop">16dp</item>
+        <item name="android:layout_marginLeft">16dp</item>
+    </style>
+    <style name="roadrecord">
+        <item name="android:textSize">40sp</item>
+        <item name="android:textColor">#FF222222</item>
+    </style>
+    <style name="ll_roadrecord">
+        <item name="android:textSize">40sp</item>
+        <item name="android:textColor">@color/color_black</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+    <style name="ll_roadrecord_unit">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">12sp</item>
+        <item name="android:layout_marginTop">2dp</item>
+        <item name="android:textColor">@color/giveback_gray</item>
+    </style>
+    <style name="info_image">
+        <item name="android:layout_width">28dp</item>
+        <item name="android:layout_height">28dp</item>
+    </style>
+    <style name="margin_common">
+        <item name="android:layout_marginLeft">16dp</item>
+        <item name="android:layout_marginRight">16dp</item>
+    </style>
+    <style name="view">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">0.5dp</item>
+    </style>
+    <style name="margin_right_common">
+        <item name="android:layout_alignParentRight">true</item>
+        <item name="android:layout_marginRight">16dp</item>
+    </style>
+    <!-- 对话框样式 -->
+    <style name="Theme.Light.Dialog" parent="android:style/Theme.Dialog">
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:scrollHorizontally">true</item>
+        <item name="android:textAppearance">@android:style/TextAppearance.DialogWindowTitle</item>
+    </style>
+    <style name="Dialog" parent="android:style/Theme.Dialog">
+        <item name="android:background">#00000000</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowIsFloating">true</item>
+    </style>
+    <style name="zxchat_AnimBottom" parent="@android:style/Animation">
+        <!--<item name="android:windowEnterAnimation">@anim/zxchat_push_bottom_in</item>
+        <item name="android:windowExitAnimation">@anim/zxchat_push_bottom_out</item>-->
+    </style>
+
+    <style name="dialog_left_right_animation">
+        <item name="android:windowEnterAnimation">@anim/in_from_right</item>
+        <item name="android:windowExitAnimation">@anim/out_to_right</item>
+    </style>
+
+    <style name="dialog_up_down_animation">
+        <item name="android:windowEnterAnimation">@anim/in_from_bottom</item>
+        <item name="android:windowExitAnimation">@anim/out_to_bottom</item>
+    </style>
+
+    <style name="dialog_right_left_animation">
+        <item name="android:windowEnterAnimation">@anim/in_from_right</item>
+        <item name="android:windowExitAnimation">@anim/out_to_right</item>
+    </style>
+
+    <style name="DialogStyleRight" parent="android:Theme.Dialog">
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:backgroundDimEnabled">true</item>
+    </style>
+
+
+    <style name="AnimBottom" parent="@android:style/Animation">
+        <item name="android:windowEnterAnimation">@anim/push_bottom_in</item>
+        <item name="android:windowExitAnimation">@anim/push_bottom_out</item>
+    </style>
+
+
+
+    //citypicker
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/cp_colorPrimary</item>
+        <item name="colorPrimaryDark">@color/cp_colorPrimaryDark</item>
+        <item name="colorAccent">@color/cp_colorAccent</item>
+    </style>
+
+    <style name="CityPickerStyle" parent="AlertDialog.AppCompat">
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:backgroundDimEnabled">true</item>
+        <item name="windowNoTitle">true</item>
+        <item name="android:windowIsFloating">false</item>
+    </style>
+
+    <style name="DefaultCityPickerAnimation" parent="@android:style/Animation">
+        <item name="android:windowEnterAnimation">@anim/cp_push_bottom_in</item>
+        <item name="android:windowExitAnimation">@anim/cp_push_bottom_out</item>
+    </style>
+
+    <style name="DefaultCityPickerTheme" parent="BaseAppTheme">
+        <item name="cpCancelTextSize">@dimen/cp_cancel_text_size</item>
+        <item name="cpCancelTextColor">@color/cp_color_gray</item>
+
+        <item name="cpClearTextIcon">@mipmap/cp_icon_clear_all</item>
+        <item name="cpSearchTextSize">@dimen/cp_search_text_size</item>
+        <item name="cpSearchTextColor">@color/cp_color_gray_dark</item>
+        <item name="cpSearchHintText">@string/cp_search_hint_text</item>
+        <item name="cpSearchHintTextColor">@color/cp_color_gray_light</item>
+        <item name="cpSearchCursorDrawable">@color/cp_color_gray_dark</item>
+
+        <item name="cpListItemHeight">@dimen/cp_list_item_height</item>
+        <item name="cpListItemTextSize">@dimen/cp_list_item_text_size</item>
+        <item name="cpListItemTextColor">@color/cp_color_gray_deep</item>
+
+        <item name="cpEmptyIcon">@mipmap/cp_icon_empty</item>
+        <item name="cpEmptyIconWidth">@dimen/cp_empty_icon_width</item>
+        <item name="cpEmptyIconHeight">@dimen/cp_empty_icon_height</item>
+        <item name="cpEmptyText">@string/cp_no_result</item>
+        <item name="cpEmptyTextSize">@dimen/cp_empty_text_size</item>
+        <item name="cpEmptyTextColor">@color/cp_color_gray_deep</item>
+
+        <item name="cpGridItemBackground">@drawable/cp_grid_item_bg</item>
+        <item name="cpGridItemSpace">@dimen/cp_grid_item_space</item>
+
+        <item name="cpSectionHeight">@dimen/cp_section_height</item>
+        <item name="cpSectionTextSize">@dimen/cp_section_text_size</item>
+        <item name="cpSectionTextColor">@color/cp_color_gray</item>
+        <item name="cpSectionBackground">@color/cp_color_section_bg</item>
+
+        <item name="cpIndexBarTextSize">@dimen/cp_index_bar_text_size</item>
+        <item name="cpIndexBarNormalTextColor">@color/cp_color_gray</item>
+        <item name="cpIndexBarSelectedTextColor">@color/cp_color_gray_dark</item>
+
+        <item name="cpOverlayWidth">@dimen/cp_overlay_width</item>
+        <item name="cpOverlayHeight">@dimen/cp_overlay_height</item>
+        <item name="cpOverlayTextSize">@dimen/cp_overlay_text_size</item>
+        <item name="cpOverlayTextColor">@android:color/white</item>
+        <item name="cpOverlayBackground">@drawable/cp_overlay_bg</item>
+    </style>
+</resources>
