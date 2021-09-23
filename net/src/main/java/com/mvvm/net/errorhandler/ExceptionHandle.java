@@ -13,7 +13,6 @@ import androidx.annotation.Keep;
 import retrofit2.HttpException;
 
 /**
-* @date :2020/10/20
 * @author :WinterSweett
  * @description
  *
