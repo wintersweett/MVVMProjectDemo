@@ -6,7 +6,6 @@ import android.annotation.TargetApi;
 import android.content.SharedPreferences.Editor;
 import android.os.Build;
 /**
-* @date :2020/10/20
 * @author :WinterSweett
  * @description
  *

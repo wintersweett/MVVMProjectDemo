@@ -243,7 +243,6 @@ public class CityPickerDialogFragment extends DialogFragment implements TextWatc
     }
     @Subscribe(threadMode = ThreadMode.MAIN,sticky = true)
     public void getAll(FuxunIndexResponse.DataBean.CityListBean response){
-        UtilsLog.d("zhm","response:::"+response);
         for(FuxunIndexResponse.DataBean.CityListBean.ABean aBean : response.getA()){
             City city = new City(aBean.getBrief(),aBean.getPname(),aBean.getFirstLetter(),aBean.getId()) ;
             mAllCities.add(city);

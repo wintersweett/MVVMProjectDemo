@@ -27,7 +27,6 @@ import okhttp3.logging.HttpLoggingInterceptor.Level;
 import retrofit2.Retrofit;
 import retrofit2.converter.gson.GsonConverterFactory;
 /**
-* @date :2020/10/20
 * @author :WinterSweett
  * @description
  *
@@ -68,9 +67,6 @@ public abstract class BaseNetworkApi  {
             if (getInterceptor() != null) {
                 okHttpClientBuilder.addInterceptor(getInterceptor());
             }
-//            if(getTokenInterceptor() != null){
-//                okHttpClientBuilder.addInterceptor(getTokenInterceptor()) ;
-//            }
             int cacheSize = 100 * 1024 * 1024; // 10MB
             okHttpClientBuilder.cache(new Cache(iNetworkRequiredInfo.getApplicationContext().getCacheDir(), cacheSize));
             okHttpClientBuilder.addInterceptor(new CommonRequestInterceptor(iNetworkRequiredInfo));

@@ -80,9 +80,7 @@ public class ImageUtils {
                         ViewGroup.LayoutParams params = view.getLayoutParams();
                         params.height = height ;
                         params.width = ScreenUtils.getScreenWidth();
-                        UtilsLog.d("zhm","imagewidth:"+imageWidth+"  imageheight :"+imageHeight+"   height:"+height+"  width:"+params.width);
                        int dipHeight = DisplayMetricsUtils.px2dip(view.getContext(),height);
-                       UtilsLog.d("zhm","dipHeight:"+dipHeight);
                         Drawable drawable = new BitmapDrawable(resource);
                         view.setBackground(drawable);
                     }
@@ -100,7 +98,6 @@ public class ImageUtils {
                 .listener(new RequestListener<Bitmap>() {
                     @Override
                     public boolean onLoadFailed(@Nullable GlideException e, Object model, Target<Bitmap> target, boolean isFirstResource) {
-                        UtilsLog.d("zhm","onLoadFail  e "+e);
                         return false;
                     }
 
@@ -120,7 +117,6 @@ public class ImageUtils {
                         params.height = height ;
                         params.width = ScreenUtils.getScreenWidth();
                         view.setImageBitmap(resource);
-                        UtilsLog.d("zhm","imageWidth : "+imageWidth+"  imageHeight:"+imageHeight+"  height:"+height);
                     }
                 });
 
@@ -145,7 +141,6 @@ public class ImageUtils {
                 .listener(new RequestListener<Bitmap>() {
                     @Override
                     public boolean onLoadFailed(@Nullable GlideException e, Object model, Target<Bitmap> target, boolean isFirstResource) {
-                        UtilsLog.d("zhm","onLoadFail  e "+e);
                         return false;
                     }
 

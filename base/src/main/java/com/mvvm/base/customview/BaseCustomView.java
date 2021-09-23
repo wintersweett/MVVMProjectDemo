@@ -10,7 +10,6 @@ import android.widget.LinearLayout;
 import androidx.databinding.DataBindingUtil;
 import androidx.databinding.ViewDataBinding;
 /**
-* @date :2020/10/20
 * @author :WinterSweett
  * @description
  *

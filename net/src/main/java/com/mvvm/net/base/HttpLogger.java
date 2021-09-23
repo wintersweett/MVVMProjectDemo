@@ -12,6 +12,7 @@ import okhttp3.logging.HttpLoggingInterceptor;
  */
 public class HttpLogger implements HttpLoggingInterceptor.Logger {
     private StringBuilder mMessage = new StringBuilder();
+
     @Override
     public void log(String message) {
 // 请求或者响应开始

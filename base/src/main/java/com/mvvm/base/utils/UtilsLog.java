@@ -40,7 +40,7 @@ public class UtilsLog {
 			android.util.Log.w(key, value);
 		}
 		if (isWrite && value!= null) {
-			StringUtils.writeToSDCardPre(key+":"+value,"/zouya/log/","UrlAndCrash",100);
+			StringUtils.writeToSDCardPre(key+":"+value,"/mvvm/log/","UrlAndCrash",100);
 		}
 	}
 

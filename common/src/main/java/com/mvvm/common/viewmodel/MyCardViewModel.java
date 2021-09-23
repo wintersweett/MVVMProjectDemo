@@ -4,7 +4,6 @@ package com.mvvm.common.viewmodel;
 import com.mvvm.base.customview.BaseCustomViewModel;
 
 /**
-* @date :2020/10/20
 * @author :WinterSweett
  * @description
  *

@@ -14,7 +14,6 @@ import com.mvvm.common.R;
 import java.util.List;
 
 /**
-* @date :2021/3/5
 * @author :WinterSweett
  * @description
  * 列表中文字颜色 与对勾选中状态

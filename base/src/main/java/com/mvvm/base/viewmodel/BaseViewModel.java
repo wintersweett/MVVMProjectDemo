@@ -17,7 +17,6 @@ import com.mvvm.base.utils.AppManager;
 import com.mvvm.base.utils.UtilsLog;
 
 /**
-* @date :2020/10/20
 * @author :WinterSweett
  * @description
  *
@@ -104,38 +103,31 @@ public abstract class BaseViewModel<M extends BaseModel, D> extends ViewModel im
     private void onResume() {
         dataList.postValue(dataList.getValue());
         viewStatusLiveData.postValue(viewStatusLiveData.getValue());
-        UtilsLog.d("zhm","BaseViewModel onResum "+getClass().getSimpleName());
     }
     @OnLifecycleEvent(Lifecycle.Event.ON_CREATE)
     public void onCreate() {
-        UtilsLog.d("zhm", " BaseViewModel onCreate: "+getClass().getSimpleName()+"  viewmodel "+this);
         AppManager.getInstance().addViewModel(this);
     }
 
     @OnLifecycleEvent(Lifecycle.Event.ON_START)
     public void onStart() {
-        UtilsLog.d("zhm", "BaseViewModel onStart: "+getClass().getSimpleName());
     }
 
 
     @OnLifecycleEvent(Lifecycle.Event.ON_PAUSE)
     public void onPause() {
-        UtilsLog.d("zhm", "BaseViewModel onPause: "+getClass().getSimpleName());
     }
     @OnLifecycleEvent(Lifecycle.Event.ON_STOP)
     public void onStop() {
-        UtilsLog.d("zhm", "BaseViewModel onStop: "+getClass().getSimpleName());
     }
 
     @OnLifecycleEvent(Lifecycle.Event.ON_DESTROY)
     public void onDestroy() {
-        UtilsLog.d("zhm", "BaseViewModel onDestroy: "+getClass().getSimpleName()+getClass().getSimpleName());
         AppManager.getInstance().remove(this);
     }
 
     @OnLifecycleEvent(Lifecycle.Event.ON_ANY)
     public void onAny() {
-        UtilsLog.d("zhm", "BaseViewModel onAny: "+getClass().getSimpleName());
     }
 
 

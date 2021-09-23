@@ -14,7 +14,6 @@ import java.util.List;
 import androidx.viewpager.widget.ViewPager;
 
 /**
-* @date :2020/10/20
 * @author :WinterSweett
  * @description
  *

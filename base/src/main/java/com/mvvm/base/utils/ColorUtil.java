@@ -1,6 +1,5 @@
 package com.mvvm.base.utils;
 /**
-* @date :2020/10/20
 * @author :WinterSweett
  * @description
  *

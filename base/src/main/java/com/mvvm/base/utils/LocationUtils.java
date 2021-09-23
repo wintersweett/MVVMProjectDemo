@@ -43,7 +43,6 @@ public class LocationUtils {
 
                 //海拔
                 double altitude = location.getAltitude();
-                UtilsLog.d("zhm", "lon:" + point[0] + "   lat:" + point[1]);
 
             }
 

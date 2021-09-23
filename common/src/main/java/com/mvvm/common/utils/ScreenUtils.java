@@ -60,8 +60,6 @@ public class ScreenUtils {
         return true;
     }
     public static int getScreenWidth(){
-        UtilsLog.d("zhm","screenwidth:"+wm.getDefaultDisplay().getWidth());
-        UtilsLog.d("zhm","screenHeight:"+wm.getDefaultDisplay().getHeight());
         return wm.getDefaultDisplay().getWidth();
     }
     public static int getScreenHeight(){

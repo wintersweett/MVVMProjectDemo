@@ -80,7 +80,6 @@ public class ImageResize {
         } catch (Exception e) {
             e.printStackTrace();
         }
-        UtilsLog.d("zhm","上传图片 file  updateFile中 2 "+file);
 
         return file;
     }

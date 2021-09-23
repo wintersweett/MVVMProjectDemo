@@ -4,7 +4,6 @@ import com.kingja.loadsir.callback.Callback;
 import com.mvvm.base.R;
 
 /**
-* @date :2020/10/20
 * @author :WinterSweett
  * @description
  *

@@ -11,7 +11,6 @@ import com.mvvm.common.databinding.MycardviewBinding;
 import com.mvvm.common.viewmodel.MyCardViewModel;
 
 /**
-* @date :2020/10/20
 * @author :WinterSweett
  * @description
  *

@@ -12,7 +12,6 @@ import com.mvvm.base.customview.ICustomView;
 import com.mvvm.base.utils.UtilsLog;
 
 /**
-* @date :2020/10/20
 * @author :WinterSweett
  * @description
  *
@@ -23,7 +22,6 @@ public class BaseViewHolder extends RecyclerView.ViewHolder {
     public BaseViewHolder(ICustomView view) {
         super((View) view);
         this.view = view;
-        UtilsLog.d("zhm","getAdapterPosition: "+getAdapterPosition()) ;
     }
 
 

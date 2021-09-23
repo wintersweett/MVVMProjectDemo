@@ -2,7 +2,6 @@ package com.mvvm.base.customview;
 
 import android.view.View;
 /**
-* @date :2020/10/20
 * @author :WinterSweett
  * @description
  *

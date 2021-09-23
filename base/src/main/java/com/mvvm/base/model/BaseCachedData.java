@@ -8,7 +8,6 @@ import java.io.Serializable;
 import androidx.annotation.Keep;
 
 /**
-* @date :2020/10/20
 * @author :WinterSweett
  * @description
  *

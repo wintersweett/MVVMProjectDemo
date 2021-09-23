@@ -12,7 +12,6 @@ import java.util.Date;
 
 public class StringUtils {
     /**
-    * @date :2020/10/20
     * @author :WinterSweett
      * @description
      *

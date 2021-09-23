@@ -4,11 +4,9 @@ import android.app.Application;
 import android.content.Context;
 import android.content.SharedPreferences;
 
-import com.mvvm.base.preference.BasePreferences;
 
 
 /**
-* @date :2020/10/20
 * @author :WinterSweett
  * @description
  *

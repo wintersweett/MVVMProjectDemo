@@ -41,7 +41,6 @@ public class TokenInterceptor implements Interceptor {
     @Override
     public Response intercept(Chain chain) throws IOException {
         tokenPreference = BasicDataPreferenceUtil.getInstance().getString(ConstantFinal.TOKEN) ;
-        UtilsLog.d("zhm","TokenInterceptor中从PreferenceUtil中取："+tokenPreference);
         if (StringUtils.isNullOrEmpty(tokenPreference)) {
             token = "Bearer ehptlkssssss";
         } else {
@@ -73,19 +72,13 @@ public class TokenInterceptor implements Interceptor {
             ExceptionStatusCode exceptionStatusCode;
             exceptionStatusCode = new Gson().fromJson(bodyString, ExceptionStatusCode.class);
             statusCode= exceptionStatusCode.getStatusCode();
-            //BaseEntity baseEntity = JSON.parseObject(bodyString,BaseEntity.class);
-            UtilsLog.i("zhm", "intercept中statuscode：" + statusCode);
             String exceptionmsg = exceptionStatusCode.getStatusMessage();
             if("201".equals(statusCode) && !BasicDataPreferenceUtil.getInstance().getBoolean(ConstantFinal.IS_LOGINED,false)){
                 ARouter.getInstance().build(Constance.LOGIN_ACTIVITY).navigation();
             }
         }
-        UtilsLog.d("zhm","token : "+token) ;
-        UtilsLog.d("zhm","token : statuscode："+statusCode) ;
-        UtilsLog.d("zhm","token TokenInterceptor code : "+code);
         if(401 == code && !BasicDataPreferenceUtil.getInstance().getBoolean(ConstantFinal.IS_LOGINED,false)){
             ARouter.getInstance().build(Constance.LOGIN_ACTIVITY).navigation();
-           // AppManager.getInstance().finishAllViewModels();
         }
         if((401 == code || "201".equals(statusCode) ) && BasicDataPreferenceUtil.getInstance().getBoolean(ConstantFinal.IS_LOGINED,false) ){
             //TODO 重新获取token
@@ -107,12 +100,9 @@ public class TokenInterceptor implements Interceptor {
             if(model instanceof RefreshTokenModel){
                 RefreshTokenModel.Token token = (RefreshTokenModel.Token) data;
                 if("0".equals(token.statusCode)) {
-                    UtilsLog.d("zhm", "刷新token后 token：" + token.token);
                     BasicDataPreferenceUtil.getInstance().setString(ConstantFinal.TOKEN, token.token);
                 }else {
-                   // ToastUtil.show(token.statusMsg);
                     ARouter.getInstance().build(Constance.LOGIN_ACTIVITY).navigation();
-                    UtilsLog.d("zhm","token code "+token.statusCode);
                 }
             }
 
@@ -121,7 +111,6 @@ public class TokenInterceptor implements Interceptor {
         @Override
         public void onLoadFail(BaseModel model, String prompt, PagingResult... pageResult) {
             ToastUtil.show(prompt);
-            UtilsLog.d("zhm","prompt "+prompt);
 
 
         }

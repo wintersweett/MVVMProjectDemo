@@ -21,7 +21,6 @@ import java.util.Calendar;
 import java.util.Date;
 import java.util.List;
 /**
-* @date :2020/10/20
 * @author :WinterSweett
  * @description
  *
@@ -42,10 +41,8 @@ public class WheelUtils  {
          pvCustomOptions = new OptionsPickerBuilder(view.getContext(), new OnOptionsSelectListener() {
             @Override
             public void onOptionsSelect(int options1, int option2, int options3, View v) {
-                UtilsLog.d("zhm","onOptionsSelct:"+options1+"  v:"+v+" options2 "+option2+" options3 "+options3);
                 //返回的分别是三个级别的选中位置
                  String tx = items.get(options1);
-                UtilsLog.d("zhm","tx:"+tx) ;
 
             }
         })
@@ -83,7 +80,6 @@ public class WheelUtils  {
         OptionsPickerView pickerView = new OptionsPickerBuilder(view.getContext(), new OnOptionsSelectListener() {
             @Override
             public void onOptionsSelect(int options1, int options2, int options3, View v) {
-                UtilsLog.d("zhm","options1: "+options1+" options2 "+options2+"  options3  "+options3+" v "+v);
 
             }
         }).setOptionsSelectChangeListener(new OnOptionsSelectChangeListener() {

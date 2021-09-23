@@ -1,6 +1,5 @@
 package com.mvvm.common.viewpageaddindicator;
 /**
-* @date :2020/10/20
 * @author :WinterSweett
  * @description
  *

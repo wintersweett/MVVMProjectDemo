@@ -135,12 +135,10 @@ public class AppManager {
 
     public <M extends BaseModel> void addViewModel(BaseViewModel mdBaseViewModel) {
         viewModelsStack.add(mdBaseViewModel);
-        UtilsLog.d("zhm","BaseViewModel AppManager : viewModelsStack.size "+viewModelsStack.size());
 
     }
     public <M extends BaseModel> void remove(BaseViewModel mdBaseViewModel) {
         viewModelsStack.remove(mdBaseViewModel);
-        UtilsLog.d("zhm","BaseViewModel AppManager : viewModelsStack.size "+viewModelsStack.size());
 
     }
     public void finishAllViewModels(){

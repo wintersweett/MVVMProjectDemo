@@ -11,7 +11,6 @@ import com.mvvm.common.databinding.ItemChargelistBinding;
 import com.mvvm.common.viewmodel.ItemChargeListViewModel;
 
 /**
-* @date :2020/10/20
 * @author :WinterSweett
  * @description
  *

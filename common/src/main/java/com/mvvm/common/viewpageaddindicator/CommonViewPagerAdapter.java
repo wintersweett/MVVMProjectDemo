@@ -8,7 +8,6 @@ import java.util.List;
 import androidx.annotation.NonNull;
 import androidx.viewpager.widget.PagerAdapter;
 /**
-* @date :2020/10/20
 * @author :WinterSweett
  * @description
  *

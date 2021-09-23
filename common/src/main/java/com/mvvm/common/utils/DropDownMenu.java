@@ -37,7 +37,6 @@ import java.util.List;
 import androidx.annotation.DrawableRes;
 
 /**
-* @date :2020/12/1
 * @author :WinterSweett
  * @description   https://github.com/dongjunkun/DropDownMenu
  * 头部筛选栏
@@ -145,13 +144,11 @@ public class DropDownMenu extends LinearLayout implements IListener {
         }else if(ConstantFinal.CHANGE_TEXT_FROM_SLIDE_CARS == flag){
             int index = Integer.parseInt(str);
             int pos = Integer.parseInt(message);
-            UtilsLog.d("zhm","顶部：从右侧传入顶部的index 与 pos："+index+"   "+pos);
             setTabText(index, selectedCars[pos],pos);
             adapter.setCheckItem(pos); //选中对勾状态
         }else if(ConstantFinal.CHANGE_TEXT_FROM_SLIDE_PRICES == flag){
             int index = Integer.parseInt(str);
             int pos = Integer.parseInt(message);
-            UtilsLog.d("zhm","顶部：从右侧传入顶部的index 与 pos："+index+"   "+pos);
             setTabText(index, selectedPrices[pos],pos);
             listDropDownAdapter.setCheckItem(pos);//选中对勾状态
         }

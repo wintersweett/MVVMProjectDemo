@@ -3,7 +3,6 @@ package com.mvvm.net.errorhandler;
 import io.reactivex.Observable;
 import io.reactivex.functions.Function;
 /**
-* @date :2020/10/20
 * @author :WinterSweett
  * @description
  *

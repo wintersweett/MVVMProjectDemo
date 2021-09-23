@@ -1,9 +1,7 @@
 package com.mvvm.base.preference;
 
-import com.mvvm.base.preference.BasePreferences;
 
 /**
-* @date :2020/10/20
 * @author :WinterSweett
  * @description
  *

@@ -19,7 +19,6 @@ import androidx.annotation.CallSuper;
 import io.reactivex.disposables.CompositeDisposable;
 import io.reactivex.disposables.Disposable;
 /**
-* @date :2020/10/20
 * @author :WinterSweett
  * @description
  *

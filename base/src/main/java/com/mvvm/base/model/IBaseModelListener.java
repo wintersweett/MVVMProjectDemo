@@ -4,7 +4,6 @@ import com.mvvm.base.model.BaseModel;
 import com.mvvm.base.model.PagingResult;
 
 /**
-* @date :2020/10/20
 * @author :WinterSweett
  * @description
  *

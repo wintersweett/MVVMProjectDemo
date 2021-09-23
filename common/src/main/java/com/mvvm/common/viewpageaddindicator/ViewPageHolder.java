@@ -3,7 +3,6 @@ package com.mvvm.common.viewpageaddindicator;
 import android.content.Context;
 import android.view.View;
 /**
-* @date :2020/10/20
 * @author :WinterSweett
  * @description
  *

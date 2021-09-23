@@ -40,14 +40,11 @@ public class ItemDiscountCoupon extends BaseCustomView<ItemDiscountCouponBinding
 
     @Override
     protected void setDataToView(ItemDiscountCouponViewModel data) {
-        Log.d("zhm","sssdddd "+data.name);
         getDataBinding().setViewModel(data);
         //用优惠券
         getDataBinding().tvUse.setOnClickListener(new OnClickListener() {
             @Override
             public void onClick(View v) {
-                Log.d("zhm","name : "+data.couponMoney);
-
                 EventBus.getDefault().post(data);
 
             }

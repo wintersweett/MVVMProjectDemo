@@ -15,7 +15,6 @@ import com.mvvm.base.model.IBaseModelListener;
 import com.mvvm.base.model.PagingResult;
 
 /**
-* @date :2020/10/20
 * @author :WinterSweett
 */
 public abstract class AbstractViewModel <M extends BaseModel, D> extends ViewModel implements LifecycleObserver, IBaseModelListener<D> {

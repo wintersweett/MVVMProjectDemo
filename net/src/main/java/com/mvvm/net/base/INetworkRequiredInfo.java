@@ -2,7 +2,6 @@ package com.mvvm.net.base;
 
 import android.app.Application;
 /**
-* @date :2020/10/20
 * @author :WinterSweett
  * @description
  *

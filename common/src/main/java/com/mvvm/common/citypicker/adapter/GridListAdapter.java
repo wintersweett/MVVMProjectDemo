@@ -22,7 +22,6 @@ import com.mvvm.common.citypicker.model.HotCity;
 
 /**
  * @Author: Bro0cL
- * @Date: 2018/2/8 21:22
  */
 public class GridListAdapter extends RecyclerView.Adapter<GridListAdapter.GridViewHolder>{
     public static final int SPAN_COUNT = 3;

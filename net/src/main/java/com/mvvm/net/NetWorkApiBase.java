@@ -1,25 +1,15 @@
 package com.mvvm.net;
 
-import android.util.Base64;
-
-import com.mvvm.base.preference.BasicDataPreferenceUtil;
-import com.mvvm.base.utils.ConstantFinal;
 import com.mvvm.net.base.BaseNetworkApi;
 import com.mvvm.net.beans.TecentBaseResponse;
 import com.mvvm.net.errorhandler.ExceptionHandle;
 import com.mvvm.net.interceptor.TokenInterceptor;
-import com.mvvm.net.utils.Constant;
-import com.mvvm.net.utils.PhoneUtils;
-
 import java.io.IOException;
-import java.net.URLEncoder;
-
 import io.reactivex.functions.Function;
 import okhttp3.Interceptor;
 import okhttp3.Request;
 import okhttp3.Response;
 /**
-* @date :2020/10/20
 * @author :WinterSweett
  * @description
  *

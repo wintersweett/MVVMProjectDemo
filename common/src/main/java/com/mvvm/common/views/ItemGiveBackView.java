@@ -37,7 +37,6 @@ public class ItemGiveBackView extends BaseCustomView<ItemGiveBackCarBinding, Ite
             super.handleMessage(msg);
             getDataBinding().pb.setVisibility(GONE);
             getDataBinding().ivIschecked.setImageResource(R.drawable.pass);
-            UtilsLog.d("zhm","str:count:"+count);
             EventBus.getDefault().postSticky("完成");
 
         }
@@ -62,7 +61,6 @@ public class ItemGiveBackView extends BaseCustomView<ItemGiveBackCarBinding, Ite
     public ItemGiveBackView(Context context, List<BaseCustomViewModel> items) {
         super(context);
         mItems = items;
-        UtilsLog.d("zhm","str:ItemGiveBackView");
     }
 
     @Override

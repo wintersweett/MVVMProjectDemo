@@ -12,8 +12,6 @@ import android.view.View.OnClickListener;
 import android.view.ViewGroup;
 
 import com.alibaba.android.arouter.launcher.ARouter;
-import com.gyf.immersionbar.components.SimpleImmersionOwner;
-import com.gyf.immersionbar.components.SimpleImmersionProxy;
 import com.kingja.loadsir.callback.Callback;
 import com.kingja.loadsir.core.LoadService;
 import com.kingja.loadsir.core.LoadSir;
@@ -40,12 +38,11 @@ import androidx.fragment.app.Fragment;
 import androidx.lifecycle.Observer;
 
 /**
-* @date :2020/10/20
 * @author :WinterSweett
  * @description
  *
 */
-public abstract class BaseFragment<V extends ViewDataBinding, VM extends BaseViewModel, D> extends OnNoDoubleListener implements Observer, SimpleImmersionOwner{
+public abstract class BaseFragment<V extends ViewDataBinding, VM extends BaseViewModel, D> extends OnNoDoubleListener implements Observer{
     protected VM viewModel;
     protected V viewDataBinding;
     private LoadService mLoadService;
@@ -167,7 +164,6 @@ public abstract class BaseFragment<V extends ViewDataBinding, VM extends BaseVie
 
     @Override
     public void onChanged(Object o) {
-        UtilsLog.d("zhm","onChanged : BaseFragment"+o);
         if (o instanceof ViewStatus && mLoadService != null) {
             switch ((ViewStatus) o) {
                 case LOADING:
@@ -224,8 +220,6 @@ public abstract class BaseFragment<V extends ViewDataBinding, VM extends BaseVie
     public void showDia(Context context){
         if(dialog == null || !dialog.isShowing()){
             StackTraceElement[] stackTraceElements =  new Throwable().getStackTrace();
-            UtilsLog.d("zhm","Dialog show");
-            UtilsLog.d("zhm","Dialog:stackTraceElements:"+stackTraceElements[0]+"\n"+stackTraceElements[1]);
             dialog = DialogUtils.showProcessDialog(getContext());
             dialog.setOnDismissListener(new OnDismissListener() {
                 @Override
@@ -243,48 +237,29 @@ public abstract class BaseFragment<V extends ViewDataBinding, VM extends BaseVie
 
 
 
-    /**
-     * ImmersionBar代理类
-     */
-    private SimpleImmersionProxy mSimpleImmersionProxy = new SimpleImmersionProxy(this);
 
     @Override
     public void setUserVisibleHint(boolean isVisibleToUser) {
         super.setUserVisibleHint(isVisibleToUser);
-        mSimpleImmersionProxy.setUserVisibleHint(isVisibleToUser);
     }
 
     @Override
     public void onActivityCreated(@Nullable Bundle savedInstanceState) {
         super.onActivityCreated(savedInstanceState);
-        mSimpleImmersionProxy.onActivityCreated(savedInstanceState);
     }
     @Override
     public void onDestroy() {
         super.onDestroy();
-        mSimpleImmersionProxy.onDestroy();
     }
 
     @Override
     public void onHiddenChanged(boolean hidden) {
         super.onHiddenChanged(hidden);
-        mSimpleImmersionProxy.onHiddenChanged(hidden);
     }
 
     @Override
     public void onConfigurationChanged(Configuration newConfig) {
         super.onConfigurationChanged(newConfig);
-        mSimpleImmersionProxy.onConfigurationChanged(newConfig);
     }
 
-    /**
-     * 是否可以实现沉浸式，当为true的时候才可以执行initImmersionBar方法
-     * Immersion bar enabled boolean.
-     *
-     * @return the boolean
-     */
-    @Override
-    public boolean immersionBarEnabled() {
-        return true;
-    }
 }

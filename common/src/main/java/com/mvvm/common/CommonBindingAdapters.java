@@ -18,7 +18,6 @@ import com.mvvm.common.utils.GlideRatioScalTransForm;
 import androidx.databinding.BindingAdapter;
 
 /**
-* @date :2020/10/20
 * @author :WinterSweett
  * @description
  *
@@ -90,7 +89,6 @@ public class CommonBindingAdapters {
                     .into(new SimpleTarget<Bitmap>() {
                         @Override
                         public void onResourceReady(Bitmap resource, Transition<? super Bitmap> transition) {
-                            UtilsLog.d("zhm","backImage 2"+resource);
                             Drawable drawable = new BitmapDrawable(resource);
                             view.setBackground(drawable);
                         }
@@ -116,7 +114,6 @@ public class CommonBindingAdapters {
                     .into(new SimpleTarget<Bitmap>() {
                         @Override
                         public void onResourceReady(Bitmap resource, Transition<? super Bitmap> transition) {
-                            UtilsLog.d("zhm","backImage 2"+resource);
                             Drawable drawable = new BitmapDrawable(resource);
                             view.setBackground(drawable);
                         }
@@ -152,7 +149,6 @@ public class CommonBindingAdapters {
                     .into(new SimpleTarget<Bitmap>() {
                         @Override
                         public void onResourceReady(Bitmap resource, Transition<? super Bitmap> transition) {
-                            UtilsLog.d("zhm","backImage 2"+resource);
                             Drawable drawable = new BitmapDrawable(resource);
                             view.setBackground(drawable);
                         }
@@ -174,7 +170,6 @@ public class CommonBindingAdapters {
                     .into(new SimpleTarget<Bitmap>() {
                         @Override
                         public void onResourceReady(Bitmap resource, Transition<? super Bitmap> transition) {
-                            UtilsLog.d("zhm","backImage 2"+resource);
                             Drawable drawable = new BitmapDrawable(resource);
                             view.setBackground(drawable);
                         }

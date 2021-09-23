@@ -47,7 +47,6 @@ import androidx.lifecycle.Observer;
 
 
 /**
-* @date :2020/10/20
 * @author :WinterSweett
  * @description
  *
@@ -201,7 +200,6 @@ public abstract class BaseActivity<V extends ViewDataBinding, VM extends BaseVie
 
     @Override
     public void onChanged(Object o) {
-        UtilsLog.d("zhm","onChanged  BaseActivity "+ o);
         if (o instanceof ViewStatus && mLoadService != null) {
             switch ((ViewStatus) o) {
                 case LOADING:
@@ -211,7 +209,6 @@ public abstract class BaseActivity<V extends ViewDataBinding, VM extends BaseVie
                     mLoadService.showCallback(EmptyCallback.class);
                     break;
                 case SHOW_CONTENT:
-                    UtilsLog.d("zhm","onChanged SHOW_CONTENT");
                     mLoadService.showSuccess();
                     break;
                 case NO_MORE_DATA:
@@ -263,7 +260,6 @@ public abstract class BaseActivity<V extends ViewDataBinding, VM extends BaseVie
     }
 
     protected String getActivityTag() {
-        UtilsLog.d("zhm","activity name : "+getClass().getSimpleName());
         return this.getClass().getSimpleName();
     }
     protected void showSuccess() {
@@ -297,8 +293,6 @@ public abstract class BaseActivity<V extends ViewDataBinding, VM extends BaseVie
     public void showDia(Context context){
         if(dialog == null || !dialog.isShowing()){
           StackTraceElement[] stackTraceElements =  new Throwable().getStackTrace();
-            UtilsLog.d("zhm","Dialog show");
-            UtilsLog.d("zhm","Dialog:stackTraceElements:"+stackTraceElements[0]+"\n"+stackTraceElements[1]);
             dialog = com.mvvm.base.utils.DialogUtils.showProcessDialog(this);
             dialog.setOnDismissListener(new OnDismissListener() {
                 @Override
@@ -309,7 +303,6 @@ public abstract class BaseActivity<V extends ViewDataBinding, VM extends BaseVie
         }
     }
     public void cancelDia(Context context){
-        UtilsLog.d("zhm","cancelDialog") ;
         if(dialog != null){
             dialog.dismiss();
         }
@@ -323,7 +316,7 @@ public abstract class BaseActivity<V extends ViewDataBinding, VM extends BaseVie
     @Override
     public void onPermissionGranted(int requestCode, List<String> perms) {
         UtilsLog.d("ws","权限onPermissionGranted:requestCode:"+requestCode);
-        BasicDataPreferenceUtil.getInstance().setInt(com.mvvm.base.utils.PermissionConstant.REQUEST_CODE_PERMISSION_GRANTED,requestCode);
+        BasicDataPreferenceUtil.getInstance().setInt(PermissionConstant.REQUEST_CODE_PERMISSION_GRANTED,requestCode);
     }
 
     @Override

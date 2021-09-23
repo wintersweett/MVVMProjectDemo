@@ -28,10 +28,9 @@ public class MyApplication extends BaseApplication {
         }
         ARouter.init(this);
 
-        //环境
-        PreferencesUtil.init(this);
-        NetworkRequestInfo networkRequestInfo = new NetworkRequestInfo(this);
-        BaseNetworkApi.init(networkRequestInfo);
+//        //环境
+//        PreferencesUtil.init(this);
+        BaseNetworkApi.init(new NetworkRequestInfo(this));
 
         ToastUtil.init(this);
         LoadSir.beginBuilder()
