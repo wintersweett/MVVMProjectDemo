@@ -19,7 +19,7 @@ public class RefreshTokenModel extends BaseModel<RefreshTokenResponse, RefreshTo
     }
     public class Token {
         public String token ;
-        public String statusCode ;
+        public int statusCode ;
         public String statusMsg ;
     }
 
@@ -38,8 +38,8 @@ public class RefreshTokenModel extends BaseModel<RefreshTokenResponse, RefreshTo
         if(t.getData()!= null){
             token.token = t.getData().getToken();
         }
-        token.statusCode = t.getStatusCode();
-        token.statusMsg = t.getStatusMessage();
+        token.statusCode = t.getErrorCode();
+        token.statusMsg = t.getErrorMsg();
         notifyResultToListeners(t,token,isFromCache);
 
     }

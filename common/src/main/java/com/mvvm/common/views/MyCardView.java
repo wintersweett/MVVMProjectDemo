@@ -36,20 +36,5 @@ public class MyCardView extends BaseCustomView<MycardviewBinding, MyCardViewMode
 
     @Override
     protected void onRootClick(View view) {
-//        ARouter.getInstance().build(Constance.WEBACTIVITY)
-//                .withString("link",getViewModel().url)
-//                .navigation();
-
-        //TODO 暂时 用于长短租入口
-        ARouter.getInstance().build(Constance.HOME_OF_RENT_CAR)
-                .navigation();
-
-
-
-        // TODO  调试 悦行
-//        String url = BasicDataPreferenceUtil.getInstance().getString(ConstantFinal.YUEXING_URL);
-//        ARouter.getInstance().build(Constance.WAP_BROWSER_COMMON_ACTIVITY)
-//                .withString("link",url)
-//                .navigation();
     }
 }

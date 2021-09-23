@@ -1,38 +1,21 @@
 package com.mvvm.login.beans;
 
+import com.mvvm.net.beans.BaseResponse;
+
 import java.io.Serializable;
 import java.util.List;
 
-public class LoginResult implements Serializable {
+public class LoginResult extends BaseResponse implements Serializable {
 
         private Data data;
-
-        private int errorCode;
-
-        private String errorMsg;
-
         public void setData(Data data){
             this.data = data;
         }
         public Data getData(){
             return this.data;
         }
-        public void setErrorCode(int errorCode){
-            this.errorCode = errorCode;
-        }
-        public int getErrorCode(){
-            return this.errorCode;
-        }
-        public void setErrorMsg(String errorMsg){
-            this.errorMsg = errorMsg;
-        }
-        public String getErrorMsg(){
-            return this.errorMsg;
-        }
 
-
-    public class Data
-    {
+    public class Data {
         private boolean admin;
 
         private List<String> chapterTops;

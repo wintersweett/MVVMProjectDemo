@@ -11,38 +11,21 @@ import java.io.Serializable;
 */
 @Keep
 public class BaseResponse implements Serializable {
-    /**
-     * statusCode : 0
-     * statusMessage : 处理成功
-     * total : 1
-     */
 
-    private String statusCode;
-    private String statusMessage;
-    private int total;
+    private int errorCode;
 
+    private String errorMsg;
 
-    public String getStatusCode() {
-        return statusCode;
+    public void setErrorCode(int errorCode){
+        this.errorCode = errorCode;
     }
-
-    public void setStatusCode(String statusCode) {
-        this.statusCode = statusCode;
+    public int getErrorCode(){
+        return this.errorCode;
     }
-
-    public String getStatusMessage() {
-        return statusMessage;
+    public void setErrorMsg(String errorMsg){
+        this.errorMsg = errorMsg;
     }
-
-    public void setStatusMessage(String statusMessage) {
-        this.statusMessage = statusMessage;
-    }
-
-    public int getTotal() {
-        return total;
-    }
-
-    public void setTotal(int total) {
-        this.total = total;
+    public String getErrorMsg(){
+        return this.errorMsg;
     }
 }

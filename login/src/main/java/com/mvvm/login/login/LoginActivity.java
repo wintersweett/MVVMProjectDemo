@@ -27,7 +27,7 @@ public class LoginActivity extends BaseActivity<ActivityLoginBinding, BaseViewMo
             public void onChanged(LoginResult loginResult) {
                 cancelDia(LoginActivity.this);
                 if(0== loginResult.getErrorCode()){
-                    ARouter.getInstance().build(Constance.OTHER_ACTIVITY).navigation();
+                    ARouter.getInstance().build(Constance.ARTICLE_LIST_ACTIVITY).navigation();
                 }
 
             }

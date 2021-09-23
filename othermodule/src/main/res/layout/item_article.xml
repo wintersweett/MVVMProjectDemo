@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+        <variable
+            name="viewModel"
+            type="com.mvvm.othermodule.otherpage.listpage.ItemArticleViewModel" />
+
+    </data>
+
+    <RelativeLayout
+        android:id="@+id/rl"
+        android:background="@drawable/shape_15white_back"
+        android:layout_width="match_parent"
+        android:paddingLeft="16dp"
+        android:layout_height="80dp">
+
+        <TextView
+            android:id="@+id/tv_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="@{viewModel.name}"
+            android:textColor="@color/color_black"
+            android:textSize="16sp" />
+
+
+        <TextView
+            android:id="@+id/tv_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_name"
+            android:layout_marginTop="6dp"
+            android:text="@{viewModel.title}"
+            android:textColor="@color/color_black"
+            android:textSize="12sp" />
+
+    <View
+        android:background="@color/line_color"
+        android:layout_alignParentBottom="true"
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"/>
+
+    </RelativeLayout>
+</layout>
