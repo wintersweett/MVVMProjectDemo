@@ -6,9 +6,6 @@
         <activity
             android:name="com.mvvm.othermodule.otherpage.listpage.ArticleListActivity"
             android:exported="true" />
-        <activity
-            android:name="com.mvvm.othermodule.otherpage.OtherActivity"
-            android:exported="true" />
     </application>
 
 </manifest>

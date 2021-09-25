@@ -1,4 +1,4 @@
-package com.mvvm.login.login;
+package com.mvvm.login.loginpage;
 
 import android.os.Bundle;
 import android.view.View;

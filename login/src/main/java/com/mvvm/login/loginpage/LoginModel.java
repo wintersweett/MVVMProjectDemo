@@ -1,4 +1,4 @@
-package com.mvvm.login.login;
+package com.mvvm.login.loginpage;
 
 import com.mvvm.base.model.BaseModel;
 import com.mvvm.login.api.ApiInterface;

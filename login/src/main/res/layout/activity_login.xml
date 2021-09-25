@@ -6,7 +6,7 @@
     <data>
         <variable
             name="loginActivity"
-            type="com.mvvm.login.login.LoginActivity" />
+            type="com.mvvm.login.loginpage.LoginActivity" />
 
     </data>
 
