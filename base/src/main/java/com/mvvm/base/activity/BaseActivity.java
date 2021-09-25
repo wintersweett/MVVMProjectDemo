@@ -39,7 +39,6 @@ import androidx.annotation.LayoutRes;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
-import androidx.appcompat.widget.Toolbar;
 import androidx.databinding.DataBindingUtil;
 import androidx.databinding.ObservableArrayList;
 import androidx.databinding.ViewDataBinding;
@@ -55,7 +54,6 @@ public abstract class BaseActivity<V extends ViewDataBinding, VM extends BaseVie
     protected VM viewModel;
     private LoadService mLoadService;
     protected V viewDataBinding;
-    private Toolbar mToolbar;
     public static String TAG ;
     protected void initImmersionBar() {
         //设置共同沉浸式样式
@@ -70,13 +68,8 @@ public abstract class BaseActivity<V extends ViewDataBinding, VM extends BaseVie
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         TAG = getClass().getSimpleName() ;
         UtilsLog.d(TAG,TAG);
-        //禁止录屏、截屏的设置
-       // getWindow().setFlags(LayoutParams.FLAG_SECURE, LayoutParams.FLAG_SECURE);
-
         //初始化沉浸式
         initImmersionBar();
-        //getWindow().setFlags(LayoutParams.FLAG_FULLSCREEN, LayoutParams.FLAG_FULLSCREEN);
-        //View.SYSTEM_UI_FLAG_LIGHT_STATUS_BAR ;
         super.onCreate(savedInstanceState);
         AppManager.getInstance().addActivity(this);
         initViewModel();

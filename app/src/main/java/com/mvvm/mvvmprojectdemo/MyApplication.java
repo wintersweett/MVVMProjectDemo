@@ -27,9 +27,6 @@ public class MyApplication extends BaseApplication {
             ARouter.openDebug();
         }
         ARouter.init(this);
-
-//        //环境
-//        PreferencesUtil.init(this);
         BaseNetworkApi.init(new NetworkRequestInfo(this));
 
         ToastUtil.init(this);

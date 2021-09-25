@@ -11,7 +11,7 @@ android {
 
         javaCompileOptions {
             annotationProcessorOptions {
-                println project.getName()
+                includeCompileClasspath = true
                 arguments = [AROUTER_MODULE_NAME: project.getName()]
             }
         }
@@ -43,7 +43,7 @@ dependencies {
     //重点：接入导航sdk 是跟androidx的constraintlayout有冲突的
     api 'com.android.support.constraint:constraint-layout:1.1.3'
     api 'com.android.support:cardview-v7:28.0.0'
-//用api 是因为 其他依赖了base module的 也要用appcompat （也就是传递给下一个module里用）
+//用api 是因为 其他依赖了base module的 （也就是传递给下一个module里用）
     api "androidx.appcompat:appcompat:$rootProject.androidXVersion"
     api 'com.google.code.gson:gson:2.8.2'
     implementation 'androidx.appcompat:appcompat:1.2.0'

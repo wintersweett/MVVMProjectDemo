@@ -90,47 +90,6 @@ public class AppManager {
         acitivtyStack.clear();
     }
 
-    public boolean isCurActivity(Class<?> cls , Context context){
-        ActivityManager mAm = (ActivityManager) context.getSystemService(Context.ACTIVITY_SERVICE);
-        boolean temp = false ;
-        if(VERSION.SDK_INT >= VERSION_CODES.M){
-            //获取当前运行的task
-            List<ActivityManager.AppTask> taskList = mAm.getAppTasks();
-            for(ActivityManager.AppTask appTask : taskList){
-                ActivityManager.RecentTaskInfo taskInfo = appTask.getTaskInfo();
-                if(null != taskInfo && taskInfo.numActivities >0 && null!=taskInfo.topActivity){
-                    temp = true;
-                    if(TextUtils.equals(cls.getName(),taskInfo.topActivity.getClassName())){
-                        return true;
-                    }
-                }
-            }
-        }else{
-            List<ActivityManager.RunningTaskInfo> runningTaskInfos = mAm.getRunningTasks(10);
-            for(ActivityManager.RunningTaskInfo taskInfo : runningTaskInfos){
-                if(null != taskInfo && taskInfo.numActivities > 0 && null != taskInfo.topActivity){
-                    temp = true;
-                    if(TextUtils.equals(cls.getName(),taskInfo.topActivity.getClassName())){
-                        return true;
-                    }
-                }
-            }
-        }
-        if(!temp){
-            if(acitivtyStack != null && cls == acitivtyStack.peek().getClass()){
-                return true ;
-            }
-        }
-        return false;
-    }
-
-    //退出应用
-    public <D> void AppExit(Context context , Boolean isBackground){
-        finishAllActivity();
-        ActivityManager activityManager = (ActivityManager) context.getSystemService(Context.ACTIVITY_SERVICE);
-        activityManager.restartPackage(context.getPackageName());
-
-    }
 
 
     public <M extends BaseModel> void addViewModel(BaseViewModel mdBaseViewModel) {

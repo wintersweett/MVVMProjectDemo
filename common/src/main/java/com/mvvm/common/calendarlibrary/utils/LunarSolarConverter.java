@@ -303,7 +303,7 @@ public class LunarSolarConverter {
     /**
      * 国历节日 *表示放假日
      */
-    private final static String[] sFtv = {
+    private final static String[] SFTV = {
 
             "0101 元旦", "0214 情人节", "0405 清明",
 
@@ -318,7 +318,7 @@ public class LunarSolarConverter {
      * 农历节日 *表示放假日
      */
 
-    private final static String[] lFtv = {
+    private final static String[] LFTV = {
             "0101 春节", "0115 元宵", "0505 端午节", "0815 中秋节", "1230 除夕"
     };
 
@@ -332,7 +332,7 @@ public class LunarSolarConverter {
 
             "立夏", "芒种", "小暑", "立秋", "白露", "寒露", "立冬", "大雪"};
 
-    private final static int[] solarTermInfo = {
+    private final static int[] SOLARTERMINFO = {
 
             0, 21208, 42467, 63836, 85337, 107014, 128867, 150921,
 
@@ -342,7 +342,7 @@ public class LunarSolarConverter {
 
     };
 
-    private final static Pattern sFreg = Pattern.compile("^(\\d{2})(\\d{2})([\\s\\*])(.+)$");
+    private final static Pattern SFREG = Pattern.compile("^(\\d{2})(\\d{2})([\\s\\*])(.+)$");
 
     private static GregorianCalendar utcCal = null;
 
@@ -459,7 +459,7 @@ public class LunarSolarConverter {
 
     private static int getSolarTermDay(int solarYear, int index) {
 
-        long l = (long) 31556925974.7 * (solarYear - 1900) + solarTermInfo[index] * 60000L;
+        long l = (long) 31556925974.7 * (solarYear - 1900) + SOLARTERMINFO[index] * 60000L;
 
         l = l + LunarSolarConverter.UTC(1900, 0, 6, 2, 5, 0);
 
@@ -536,9 +536,9 @@ public class LunarSolarConverter {
 
         Matcher m;
 
-        for (int i = 0; i < LunarSolarConverter.sFtv.length; i++) {
+        for (int i = 0; i < LunarSolarConverter.SFTV.length; i++) {
 
-            m = LunarSolarConverter.sFreg.matcher(LunarSolarConverter.sFtv[i]);
+            m = LunarSolarConverter.SFREG.matcher(LunarSolarConverter.SFTV[i]);
 
             if (m.find()) {
 
@@ -556,9 +556,9 @@ public class LunarSolarConverter {
 
         }
 
-        for (int i = 0; i < LunarSolarConverter.lFtv.length; i++) {
+        for (int i = 0; i < LunarSolarConverter.LFTV.length; i++) {
 
-            m = LunarSolarConverter.sFreg.matcher(LunarSolarConverter.lFtv[i]);
+            m = LunarSolarConverter.SFREG.matcher(LunarSolarConverter.LFTV[i]);
 
             if (m.find()) {
 

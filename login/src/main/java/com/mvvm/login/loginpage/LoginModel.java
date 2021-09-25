@@ -6,6 +6,12 @@ import com.mvvm.login.beans.LoginResult;
 import com.mvvm.net.NetWorkApiBase;
 import com.mvvm.net.observer.BaseObserver;
 
+/**
+* @date :2021/9/25
+* @author :WinterSweett
+ * @description 登录接口
+ *
+*/
 public class LoginModel  extends BaseModel<LoginResult, LoginResult> {
     public LoginModel() {
         super(LoginResult.class, false, null, null);

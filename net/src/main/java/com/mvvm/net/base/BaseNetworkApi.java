@@ -36,12 +36,8 @@ public abstract class BaseNetworkApi  {
     private static HashMap<String, Retrofit> retrofitHashMap = new HashMap<>();
     public static String mBaseUrl ;
     private OkHttpClient mOkHttpClient;
-    public static String mIsFormal = "";
     private static final int DEFAULT_CONNECT_TIMEOUT = 60;
     private static final int DEFAULT_WRITE_TIMEOUT = 40;
-    private static final int DEFAULT_READ_TIMEOUT = 40;
-    public BaseNetworkApi() {
-    }
 
     public static void init(INetworkRequiredInfo networkRequiredInfo) {
         iNetworkRequiredInfo = networkRequiredInfo;

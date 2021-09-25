@@ -17,7 +17,7 @@ public class Lunar {
 
 
 
-    final static String chineseNumber[] =
+    final static String CHINESENUMBER[] =
 
             {"一", "二", "三", "四", "五", "六", "七", "八", "九", "十", "十一", "十二"};
 
@@ -32,7 +32,7 @@ public class Lunar {
         if (day == 10)
             return "初十";
         else
-            return chineseTen[day / 10] + chineseNumber[n];
+            return chineseTen[day / 10] + CHINESENUMBER[n];
 
     }
 

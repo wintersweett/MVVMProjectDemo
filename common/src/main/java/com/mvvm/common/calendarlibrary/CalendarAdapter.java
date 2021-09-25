@@ -256,6 +256,8 @@ final class CalendarAdapter extends RecyclerView.Adapter<CalendarAdapter.Calenda
                             case -1:
                                 calendarSelectDay.setFirstSelectDay(calendarDay);
                                 break;
+                            default:
+                                break;
                         }
                     }
                 } else {

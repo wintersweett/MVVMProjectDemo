@@ -109,8 +109,6 @@ public class WheelUtils  {
         startDate.set(2014, 1, 23);
         Calendar endDate = Calendar.getInstance();
         endDate.set(2027, 2, 28);
-       // endDate.setTime(18);
-        //时间选择器 ，自定义布局
         pvCustomTime = new TimePickerBuilder(v.getContext(), new OnTimeSelectListener() {
             @Override
             public void onTimeSelect(Date date, View v) {//选中事件回调

@@ -154,6 +154,7 @@ private static final String[] DEFAULT_INDEX_ITEMS = {"热门", "A", "B", "C", "D
                 }
                 invalidate();
                 break;
+            default:break;
         }
         return true;
     }

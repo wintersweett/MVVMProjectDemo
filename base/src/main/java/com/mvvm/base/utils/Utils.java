@@ -90,7 +90,7 @@ public class Utils {
 
         if (!StringUtils.isNullOrEmpty(str) && str.length() > 10 && str.length() < 14) {
             if (str.length() == 11) {
-                if (!str.substring(0, 1).equals("1")) {
+                if (!"1".equals(str.substring(0, 1))) {
                     ToastUtil.show("请输入正确的手机号");
                     return false;
                 } else {
@@ -101,7 +101,7 @@ public class Utils {
 
                 return false;
             } else {
-                if (!str.substring(0, 5).equals("00852") && !str.substring(0, 5).equals("00853")) {
+                if (!"00852".equals(str.substring(0, 5)) && !"00853".equals(str.substring(0, 5))) {
                     ToastUtil.show("请输入正确的手机号");
 
                     return false;

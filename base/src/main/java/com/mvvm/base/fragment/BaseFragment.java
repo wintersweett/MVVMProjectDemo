@@ -71,13 +71,6 @@ public abstract class BaseFragment<V extends ViewDataBinding, VM extends BaseVie
                    viewDataBinding = DataBindingUtil.inflate(inflater, getLayoutId(), container, false);
 
         UtilsLog.d("ws","BaseFragment:this:"+this);
-//        if(savedInstanceState == null || viewDataBinding == null){
-//            viewDataBinding = DataBindingUtil.inflate(inflater, getLayoutId(), container, false);
-//        } else {
-//            viewDataBinding = (V) savedInstanceState.getSerializable("viewdatabinding");
-//            UtilsLog.d(getFragmentTag(), "Activity:" + getActivity() + " Fragment:"+this + ": " + "savedInstanceState != null");
-//        }
-//        UtilsLog.d(getFragmentTag(), "Activity:" + getActivity() + " Fragment:"+this + ": " + "onCreateView");
         return viewDataBinding.getRoot();
     }
 
@@ -234,15 +227,6 @@ public abstract class BaseFragment<V extends ViewDataBinding, VM extends BaseVie
             dialog.dismiss();
         }
     }
-
-
-
-
-    @Override
-    public void setUserVisibleHint(boolean isVisibleToUser) {
-        super.setUserVisibleHint(isVisibleToUser);
-    }
-
     @Override
     public void onActivityCreated(@Nullable Bundle savedInstanceState) {
         super.onActivityCreated(savedInstanceState);

@@ -253,42 +253,6 @@ public abstract class BaseModel<F, T> implements BaseNetWorkObserver<F> {
     }
 
 
-    /**
-     * 发消息给UI线程
-     */
-    //TODO
-//    protected void notifyResultToListeners(F networkResonseBean, T data, boolean isFromCache) {
-//        synchronized (this) {
-//            for (WeakReference<IBaseModelListener> weakListener : mWeakListenerArrayList) {
-//                if (weakListener.get() instanceof IBaseModelListener) {
-//                    IBaseModelListener listenerItem = weakListener.get();
-//                    if (listenerItem != null) {
-//                        if (isPaging()) {
-//                                listenerItem.onLoadFinish(this, data,
-//                                        isFromCache ? new PagingResult(false, true, true) :
-//                                            new PagingResult(data == null ? true : ((List) data).isEmpty(), pageNumber == INIT_PAGE_NUMBER, data == null ? false : ((List) data).size() > 0));
-//                        } else {
-//                            listenerItem.onLoadFinish(this, data);
-//                        }
-//                    }
-//                }
-//            }
-//            if (isPaging()) { //如果分页
-//                if (mCachedPreferenceKey != null && pageNumber == INIT_PAGE_NUMBER && !isFromCache) {
-//                    saveDataToPreference(networkResonseBean);
-//                }
-//                if (!isFromCache) {
-//                    if(data != null && data instanceof List && ((List) data).size() > 0){
-//                        pageNumber++;
-//                    }
-//                }
-//            } else { //不分页
-//                if (mCachedPreferenceKey != null && !isFromCache) {
-//                    saveDataToPreference(networkResonseBean);
-//                }
-//            }
-//        }
-//    }
 
     protected void loadFail(final String errorMessage) {
         synchronized (this) {

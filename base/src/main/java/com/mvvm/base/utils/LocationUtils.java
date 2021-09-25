@@ -66,7 +66,7 @@ public class LocationUtils {
                     case LocationProvider.TEMPORARILY_UNAVAILABLE:
                         ToastUtil.show("当前GPS为暂停服务状态!");
                         break;
-
+                    default:break;
 
                 }
 

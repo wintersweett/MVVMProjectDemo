@@ -4,7 +4,12 @@ import com.mvvm.net.beans.BaseResponse;
 
 import java.io.Serializable;
 import java.util.List;
-
+/**
+* @date :2021/9/25
+* @author :WinterSweett
+ * @description 登录返回实体
+ *
+*/
 public class LoginResult extends BaseResponse implements Serializable {
 
         private Data data;

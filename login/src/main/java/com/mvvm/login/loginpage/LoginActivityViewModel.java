@@ -8,7 +8,12 @@ import com.mvvm.base.model.PagingResult;
 import com.mvvm.base.utils.UtilsLog;
 import com.mvvm.base.viewmodel.BaseViewModel;
 import com.mvvm.login.beans.LoginResult;
-
+/**
+* @date :2021/9/25
+* @author :WinterSweett
+ * @description登录页面对应的viewmodel
+ *
+*/
 public class LoginActivityViewModel extends BaseViewModel {
 
     IBaseModelListener listener = new IBaseModelListener() {

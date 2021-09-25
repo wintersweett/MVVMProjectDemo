@@ -35,8 +35,6 @@ public class ToastUtil {
 				tv_content.setText(msg);
 				mToast = new Toast(context);
 				mToast.setView(v);
-//				mToast = Toast.makeText(context, "", Toast.LENGTH_SHORT);
-//				mToast.setText(msg);
 				mToast.setGravity(Gravity.CENTER, 0, 0);
 				mToast.show();
 			}

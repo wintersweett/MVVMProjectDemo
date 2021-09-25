@@ -15,7 +15,12 @@ import com.mvvm.base.viewmodel.BaseViewModel;
 import com.mvvm.login.R;
 import com.mvvm.login.beans.LoginResult;
 import com.mvvm.login.databinding.ActivityLoginBinding;
-
+/**
+* @date :2021/9/25
+* @author :WinterSweett
+ * @description 登录页面
+ *
+*/
 @Route(path = Constance.LOGIN_ACTIVITY)
 public class LoginActivity extends BaseActivity<ActivityLoginBinding, BaseViewModel> {
     LoginActivityViewModel viewModel ;

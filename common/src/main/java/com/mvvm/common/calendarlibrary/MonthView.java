@@ -225,6 +225,7 @@ public class MonthView extends View {
             case 1:
                 dayPaint.setFlags(flags | Paint.FAKE_BOLD_TEXT_FLAG);
                 break;
+            default:break;
         }
         dividerPaint = new Paint();
         dividerPaint.setColor(dividerColor);
@@ -276,6 +277,7 @@ public class MonthView extends View {
                     onDayClick(calendarDay);
                 }
                 break;
+            default:break;
         }
         return true;
     }

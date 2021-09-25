@@ -59,6 +59,7 @@ public class RecyclerViewSpacesItemDecoration extends RecyclerView.ItemDecoratio
                 break;
             case BOTTOM_DECORATION:
                 this.bottomSpace = space;
+            default:break;
         }
     }
 
