@@ -7,6 +7,7 @@ import com.mvvm.base.model.IBaseModelListener;
 import com.mvvm.base.model.PagingResult;
 import com.mvvm.base.utils.UtilsLog;
 import com.mvvm.base.viewmodel.BaseViewModel;
+import com.mvvm.base.viewmodel.ViewStatus;
 import com.mvvm.login.beans.LoginResult;
 /**
 * @date :2021/9/25
@@ -20,6 +21,7 @@ public class LoginActivityViewModel extends BaseViewModel {
         @Override
         public void onLoadFinish(BaseModel model, Object data, PagingResult... pageResult) {
             if(model instanceof LoginModel){
+                viewStatusLiveData.postValue(ViewStatus.NO_MORE_DATA);
                 LoginResult result = (LoginResult) data;
                 resultMutableLiveData.setValue(result);
             }

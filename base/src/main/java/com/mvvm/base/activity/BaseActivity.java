@@ -79,6 +79,8 @@ public abstract class BaseActivity<V extends ViewDataBinding, VM extends BaseVie
             getLifecycle().addObserver(viewModel);
         }
         ARouter.getInstance().inject(this);
+
+        viewModel.viewStatusLiveData.observe(this,this);
     }
 
     private void initViewModel() {

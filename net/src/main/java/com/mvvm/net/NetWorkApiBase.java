@@ -50,18 +50,18 @@ public class NetWorkApiBase extends BaseNetworkApi {
         };
     }
 
+    /**
+    *@Description 做一些转换处理
+    *@param
+    *@return
+    *@author WinterSweett
+    *@time
+    */
     @Override
     protected <T> Function<T, T> getAppErrorHandler() {
         return new Function<T, T>() {
             @Override
             public T apply(T response) throws Exception {
-                //response中code码不会0 出现错误
-                if (response instanceof TecentBaseResponse && ((TecentBaseResponse) response).showapiResCode != 0) {
-                    ExceptionHandle.ServerException exception = new ExceptionHandle.ServerException();
-                    exception.code = ((TecentBaseResponse) response).showapiResCode;
-                    exception.message = ((TecentBaseResponse) response).showapiResError != null ? ((TecentBaseResponse) response).showapiResError : "";
-                    throw exception;
-                }
                 return response;
             }
         };
